@@ -9,44 +9,44 @@
 #
 # url is site domain, full URL to the production location of your collection
 # on GitHub Pages follows the pattern username.github.io
-url: https://gbventura.github.io 
+url: https://eugestumm.github.io 
 # baseurl is path to location on the domain if necessary e.g. /digital/hjccc
 # on GitHub Pages it is your github repository's name prefixed with a /
-baseurl: /pinatabooks 
+baseurl: /BajubaDigitalArchive 
 # location of code, the full url to your github repository
-source-code: https://github.com/gbventura/pinatabooks
+source-code: https://github.com/eugestumm/BajubaDigitalArchive
 
 ##########
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: A Latino Children's Book Collection 
+title: Bajubá Digital Archive
+
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: The Piñata Catalog
+tagline: An Open-Access Repository for Resources in and on Pajubá (or Bajubá)
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "The Piñata Books Collection features books published for children in Spanish, English and four in Nahuat. Piñata Books is an imprint of Arte Público Press, the premier publisher of books written by Latinos in the United States."
+description: "This digital archive features cultural productions and academic works that center around Pajubá. Pajubá (or Bajubá) is a cryptolect originally developed by Brazilian trans women and travestis to protect themselves from violence and persecution. All metadata in this project is licensed under Creative Commons CC-BY 4.0."
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
-author: Gabriela Baeza Ventura and Ana P. Sánchez
+author: Euge Stumm
 
 # Set up site language ids and display names. First language will be the site's default language
 site_languages:
   - lang_id: en
     lang_display: English
-  - lang_id: es
-    lang_display: Español
-    lang_site_title: Colección de libros latinos
-    lang_site_tagline: El catálogo de Piñata Books
-    lang_site_description: "La Colección de libros latiinos presenta libros publicados para niños en español, inglés y cuatro en náhuat. Piñata Books es un sello de Arte Público Press, la principal editorial de libros escritos por latinos en los Estados Unidos."
-
+  - lang_id: pt
+    lang_display: Português
+    lang_site_title: Arquivo Digital Bajubá
+    lang_site_tagline: Um repositório de acesso aberto para recursos em e sobre o Pajubá (ou Bajubá)
+    lang_site_description: "Este arquivo digital apresenta produções culturais e trabalhos acadêmicos que se centram em torno do Pajubá. O Pajubá (ou Bajubá) é um cryptolect originalmente desenvolvido por mulheres trans brasileiras e travestis para se protegerem da violência e perseguição. Todos os metadados deste projeto estão licenciados sob Creative Commons CC-BY 4.0."
 # Set paths, language ids, and permalinks for pages
 defaults:
   -
     scope:
-      path: 'es'
+      path: 'pt'
     values:
-      permalink: /es/:basename
-      lang: 'es'
+      permalink: /pt/:basename
+      lang: 'pt'
   -
     scope:
       path: 'pages'
@@ -65,10 +65,10 @@ metadata: books-metadata
 # Site/Organization Branding 
 #   Uncomment these and enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
 #
-organization-name: "Arte Público Press"
-organization-link: https://artepublicopress.com/
-organization-logo-banner: /assets/img/APP_Logo_2019.png
-organization-logo-nav: /assets/img/app_logo_white_sm.png
+#organization-name: "Arte Público Press"
+#organization-link: https://artepublicopress.com/
+#organization-logo-banner: /assets/img/APP_Logo_2019.png
+#organization-logo-nav: /assets/img/app_logo_white_sm.png
 
 
 ##########
@@ -85,7 +85,7 @@ organization-logo-nav: /assets/img/app_logo_white_sm.png
 # ROBOTS EXCLUDE
 #
 # set noindex to true if you do NOT want Google to index your site
-noindex: true 
+noindex: false
 
 ##########
 # BUILD SETTINGS 

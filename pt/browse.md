@@ -5,4 +5,4 @@ layout: browse
 # the Browse visualization will be added below the content in this file
 ---
 
-## Buscar ítems
+## Buscar itens
