@@ -23,14 +23,14 @@ browse-buttons: true # true/false, adds previous/next arrows to item pages
 ##########
 # SUBJECTS PAGE
 #
-subjects-fields: subject-en;subject-es;creator # set the field to be featured in the cloud (if left blank, none will be generated)
+subjects-fields: subject-en;subject-pt;creator # set the field to be featured in the cloud (if left blank, none will be generated)
 subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # boxers;boxing;boxer # set of subjects separated by ;, e.g. boxers;boxing
 
 ##########
 # LOCATIONS PAGE
 #
-locations-fields: locations_en;locations_es # set the field to be featured in the cloud
+locations-fields: locations_en;locations_pt # set the field to be featured in the cloud
 locations-min: 1 # min size for subject cloud, too many terms = slow load time!
 locations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
@@ -58,9 +58,9 @@ year-nav-increment: 5 # set increments when auto gen nav years
 #
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "objectid,identifier,filename,title,isbn,title-es,creator,illustrator,translator,description-en,description-es,date,locations_en,locations_es,location_first_en,location_first_es,latitude_first,longitude_first,location_second_en,location_second_es,latitude_second,longitude_second,location_third_en,location_third_es,latitude_third,longitude_third,location_fourth_en,location_fourth_es,latitude_fourth,longitude_fourth,subject-en,subject-es,tags-en,tags-es,age_group_interest_level,lexile-level-en,lexile-level-es,atos-level-en,atos-level-es,ar_id,language,source,type,format,rights,rightsstatement"
+metadata-export-fields: "objectid,identifier,filename,title,title-pt,description-en,description-pt,date,locations_en,locations_pt,location_first_en,location_first_es,latitude_first,longitude_first,location_second_en,location_second_es,latitude_second,longitude_second,location_third_en,location_third_es,latitude_third,longitude_third,location_fourth_en,location_fourth_es,latitude_fourth,longitude_fourth,subject-en,subject-pt,source,type,format,rights,rightsstatement"
 # generate a facets list for given fields, comma delimited
-metadata-facets-fields: "subject-en,subject-es,tags-en,tags-es,creatorillustrator,translator"
+metadata-facets-fields: "subject-en,subject-pt"
 
 ##########
 # COMPOUND OBJECTS
