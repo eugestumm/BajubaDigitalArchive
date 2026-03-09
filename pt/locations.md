@@ -1,5 +1,5 @@
 ---
-title: Ubicaciones
+title: Localizações
 layout: cloud
 # Default locations page is configured in "_data/theme.yml"
 # leave cloud-fields as "site.data.theme.locations-fields"
@@ -7,7 +7,7 @@ layout: cloud
 cloud-fields: site.data.theme.locations-fields
 ---
 
-## Buscar Ubicaciones
+## Explorar Localizações
 
-Utilice esta visualización de nube de palabras para buscar ubicaciones.
-El tamaño de la palabra está determinado por la frecuencia y todas las palabras se vinculan a los resultados la colección correspondiente.
+Use esta visualização de nuvem de palavras para navegar pelas locais de publicação das obras.
+O tamanho das palavras é determinado pela frequência e todas as palavras têm links para uma pesquisa correspondente na coleção.

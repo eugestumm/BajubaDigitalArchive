@@ -1,11 +1,13 @@
 ---
-title: Datos
+title: Metadados
 layout: data
 # see _data/config-table.csv for table display options
 # a table visualization will be added below the content in this file
 ---
 
-## Metadatos de la colección
+## Metadados da Coleção
 
-La siguiente tabla proporciona clasificación y búsqueda básica de los contenidos de la colección. Use el botón 'CSV' o 'Excel' a continuación para descargar los metadatos filtrados que ve en la página en su formato preferido.
-Alternativamente, haga clic en el botón 'Descargar' en la parte superior derecha para ver los metadatos completos de la colección en varios formatos de exportación.
+A tabela abaixo oferece organização e busca básica do conteúdo da coleção. 
+Use o botão "CSV" ou "Excel" abaixo para baixar os metadados filtrados que você vê na página no formato de sua preferência. 
+Como alternativa, clique no botão "Download" no canto superior direito para visualizar os metadados completos da coleção em vários formatos de exportação. 
+Para acessar os metadados completos desta coleção no Google Planilhas, [clique aqui](https://docs.google.com/spreadsheets/d/1VI-54jK7-DHtDxPZoDCLz4vNEMCfZdN7La-UCDktCiE/edit?usp=sharing).

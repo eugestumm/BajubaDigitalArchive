@@ -9,7 +9,7 @@ credits: true
 
 # Sobre este Projeto
 
-Este arquivo digital faz parte da tese de doutorado de [Euge Stumm](https://eugestumm.github.io) sobre as construções sexo-genéricas dissidente de linguagem na América Latina. O desenvolvimento dos dados do corpus foi supervisionado pelo Professor Steven Butterman e a implementação deste site foi supervisionada pela Professora Susanna Allés-Torrent. Atualmente, estamos trabalhando em uma versão bilíngue (em português) deste projeto, prevista para a primavera de 2026.
+Este arquivo digital faz parte da tese de doutorado de [Euge Stumm](https://eugestumm.github.io) sobre as construções sexo-genéricas dissidente de linguagem na América Latina. O desenvolvimento dos dados do corpus foi supervisionado pelo Professor Steven Butterman e a implementação deste site foi supervisionada pela Professora Susanna Allés-Torrent. Atualmente, estamos trabalhando em uma versão bilíngue (em inglês e português) deste projeto, prevista para a primavera de 2026.
 
 Este projeto tem como objetivo fornecer a pesquisadores e ao público em geral:
 * 1\) um ponto de partida para compreender e aprender o Pajubá
@@ -23,14 +23,14 @@ O Pajubá é um criptoleto (uma língua secreta) originalmente desenvolvido por 
 ## Como Usar este Arquivo
 
 * Para Pesquisadores
-  * Navegue por [região](https://eugestumm.github.io/PajubaDigitalArchive/locations.html), [período histórico](https://eugestumm.github.io/PajubaDigitalArchive/timeline.html), [autor e gênero](https://eugestumm.github.io/PajubaDigitalArchive/subjects.html) ou [léxico](https://eugestumm.github.io/PajubaDigitalArchive/glossary.html)
-  * Baixe os [metadados completos](https://eugestumm.github.io/PajubaDigitalArchive/data.html) para análise
-  * Acesse a [documentação metodológica completa](https://eugestumm.github.io/PajubaDigitalArchive/method.html)
-  * Consulte fontes primárias e [secundárias](https://eugestumm.github.io/PajubaDigitalArchive/browse.html#academic%20work)
+  * Navegue por [região](https://eugestumm.github.io/BajubaDigitalArchive/locations.html), [período histórico](https://eugestumm.github.io/BajubaDigitalArchive/timeline.html), [autor e gênero](https://eugestumm.github.io/BajubaDigitalArchive/subjects.html) ou [léxico](https://eugestumm.github.io/BajubaDigitalArchive/glossary.html)
+  * Baixe os [metadados completos](https://eugestumm.github.io/BajubaDigitalArchive/data.html) para análise
+  * Acesse a [documentação metodológica completa](https://eugestumm.github.io/BajubaDigitalArchive/method.html)
+  * Consulte fontes primárias e [secundárias](https://eugestumm.github.io/BajubaDigitalArchive/browse.html#academic%20work)
 
 * Para Estudantes e Público em Geral
-  * Explore um [mapa interativo](https://eugestumm.github.io/PajubaDigitalArchive/map.html) com variações regionais
-  * Ouça [amostras de áudio](https://eugestumm.github.io/PajubaDigitalArchive/browse.html#video) (com traduções e/ou transcrições, quando disponíveis)
+  * Explore um [mapa interativo](https://eugestumm.github.io/BajubaDigitalArchive/map.html) com variações regionais
+  * Ouça [amostras de áudio](https://eugestumm.github.io/BajubaDigitalArchive/browse.html#video) (com traduções e/ou transcrições, quando disponíveis)
   * Leia documentos históricos e amostras do Pajubá
 
 ## Como este Projeto Foi Desenvolvido
@@ -47,7 +47,7 @@ Expressamos profunda gratidão aos falantes do Pajubá, ativistas LGBTQIAPN+ e o
 
 ## Contato
 
-Para colaborações, dúvidas e assistência técnica, entre em contato com Euge Stumm: [ehs89@miami.edu](mailto:ehs89@miami.edu).
+Para colaborações, dúvidas e assistência técnica, entre em contato com Euge Stumm: [estumm@miami.edu](mailto:estumm@miami.edu).
 
 ## O Arquivo Digital do Pajubá Utiliza o Framework CollectionBuilder
 

@@ -1,15 +1,21 @@
 translate_id,description,en,pt
 nav-home,Navigation menu Home option,Home,Início
+nav-lexicon,Navigation menu Lexicon dropdown,Bajubá,Bajubá
+nav-explore-lexicon,Navigation menu Explore Lexicon option,Explore Lexicon,Explorar Léxico
+nav-glossary,Navigation menu Glossary page option,Glossary,Glossário
+nav-visualization,Navigation menu Visualization dropdown,Visualization,Visualização
+nav-graph-network-work,Navigation menu Graph Network by Work option,Graph Network by Work,Gráfico de Rede por Obra
+nav-pajuba-timeline,Navigation menu Pajubá documentation timeline option,Timeline of Pajubá Lexical Documentation Over Time,Linha do Tempo da Documentação do Pajubá
 nav-browse,Navigation menu Browse option,Browse,Explorar
 nav-subjects,Navigation menu Subjects option,Subjects,Categorias
 nav-locations,Navigation menu Locations option,Locations,Localizações
-nav-map,Navigation menu Map option,Maps,Mapa
-nav-map-books,Navigation menu book map option,Book Map,Mapa de Libros
-nav-map-creators,Navigation menu creator map option,Author Map,Mapa del Autores
-nav-map-illustrators,Navigation menu illustrator map option,Illustrator Map,Mapa del Ilustradores
+nav-map,Navigation menu Map option,Map,Mapa
 nav-timeline,Navigation menu Timeline option,Timeline,Linha do Tempo
 nav-data,Navigation menu Data option,Data,Metadados
-nav-about,Navigation menu About option,About,Sobre
+nav-about,Navigation menu About dropdown,About,Sobre
+nav-about_project,Navigation menu About project option,About this project,Sobre este projeto
+nav-how,Navigation menu How to use option,How to use this project,Como usar este projeto
+nav-method,Navigation menu Method option,Method,Método
 home-featured-image,Home featured image button,Featured Image,Foto principal
 home-description,Home description card title,Description,Descrição
 home-learn,Home learn more button,Learn More,Saiba mais
@@ -18,7 +24,7 @@ home-view-item,Home carousel view item button,View Item,Ver item
 home-time,Home time span card title,Time Span,Intervalo de tempo
 home-timeline,Home time span button,View Timeline,Ver cronologia
 home-subjects,Home top subjects card title,Top Subjects,Categorias principais
-home-locations,Home top locations card title,Locations,Localizações
+home-locations,Home top locations card title,Top Locations,Localizações principais
 home-objects,Home objects card title,Objects,Objetos
 home-objects-images,Home objects card images button,Images,Imagens
 home-objects-audio,Home objects card audio button,Audio Files,Arquivos de áudio
@@ -147,3 +153,4 @@ metadata-ar-id,ar_id field in metadata,AR ID,AR ID
 metadata-age-group,age group field in metadata,Age Group,Grupo de Idade
 metadata-tags,Tags field in metadata,Tags,Etiquetas
 metadata-language,Language field in metadata,Language,Idioma
+metadata-words-featured,Pajuba Lexicon field in metadata,Featured Words,Palavras em Pajubá

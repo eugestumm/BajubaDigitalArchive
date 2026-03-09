@@ -7,7 +7,7 @@ layout: cloud
 cloud-fields: site.data.theme.subjects-fields
 ---
 
-## Buscar Categorías
+## Navegar por Categorias
 
-Utilice esta visualización de nube de palabras para buscar términos y categorías.
-El tamaño de la palabra está determinado por la frecuencia y todas las palabras se vinculan a una búsqueda de colección correspondiente.
+Use esta visualização de nuvem de palavras para navegar pelas categorias.
+O tamanho das palavras é determinado pela frequência e todas as palavras têm links para uma pesquisa correspondente na coleção.

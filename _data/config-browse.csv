@@ -5,3 +5,4 @@ subject-pt,,pt,true
 locations_en,metadata-location,en,true
 locations_pt,metadata-location,pt,true
 language,metadata-language,en;pt,true
+words_found,metadata-words-featured,en;pt,true
