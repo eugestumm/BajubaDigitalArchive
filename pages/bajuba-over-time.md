@@ -1,15 +1,19 @@
 ---
-title: Graph Network Visualization
+title: Timeline - Documentating Lexicon in Bajubá Over Time
 layout: page
-permalink: /graph-network-words-works.html
+permalink: /bajuba-over-time.html
 ---
 
-## Lexical Network Visualization
+# Pajubá — Documentation Over Time
 
-This page presents an interactive network visualization of the Bajubá lexicon and its connections to cultural productions catalogued in the digital archive. Each node represents either a lexical item or a cultural production; the links indicate which terms appear in each work. Click on any node to explore its connections and be redirected to the corresponding entry in the archive.
+This chart maps **over 350 words from Pajubá** by their year of first known documentation.
+
+Each bubble is a word. Its horizontal position marks when it was first recorded. **Gold bubbles** appear in Brazilian mass media; **blue bubbles** do not.
+
+Dense vertical clusters indicate years with many documented words. Use the filters to show or hide each group, adjust the year range to focus on a period, and zoom in to read individual words.
 
 <div class="responsive-network-iframe">
-  <iframe src="{{ site.baseurl }}/assets/network_graph_words_work_layout.html" 
+  <iframe src="{{ site.baseurl }}/assets/visualization_pajuba_over_time.html" 
           allowfullscreen>
   </iframe>
 </div>

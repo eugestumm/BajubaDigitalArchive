@@ -35,7 +35,7 @@ O Pajubá é um criptoleto (uma língua secreta) originalmente desenvolvido por 
 
 ## Como este Projeto Foi Desenvolvido
 
-Para mais informações sobre coleta de dados, codificação e procedimentos metodológicos, consulte a seção "[Método](https://eugestumm.github.io/PajubaDigitalArchive/method.html)."
+Para mais informações sobre coleta de dados, codificação e procedimentos metodológicos, consulte a seção "[Método](https://eugestumm.github.io/BajubaDigitalArchive/method.html)."
 
 ## Financiamento e Sustentabilidade
 

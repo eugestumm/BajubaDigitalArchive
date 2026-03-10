@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8" />
-<title>Cultural Production Network Explorer</title>
+<title>Explorador da Rede de Produções Culturais</title>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -432,26 +432,26 @@
 <div class="container">
   <div class="header">
     <div class="brand">
-      <h1 class="title">Cultural Production Network</h1>
-      <span class="subtitle">Bajuba Lexicon Network</span>
+      <h1 class="title">Rede de Produções Culturais</h1>
+      <span class="subtitle">Léxico do Bajuba</span>
     </div>
     <div class="controls">
       <div class="control-group">
-        <label class="control-label">Link Strength</label>
+        <label class="control-label">Força dos Vínculos</label>
         <input type="range" class="slider" id="linkStrength" min="0.1" max="2" step="0.1" value="0.8">
       </div>
       <div class="control-group">
-        <label class="control-label">Node Spacing</label>
+        <label class="control-label">Espaçamento dos Nós</label>
         <input type="range" class="slider" id="nodeSpacing" min="50" max="300" step="10" value="130">
       </div>
-      <button class="button" id="resetBtn">Reset View</button>
+      <button class="button" id="resetBtn">Resetar Vista</button>
     </div>
   </div>
 
   <div class="viz-container">
     <div class="loading" id="loading">
       <div class="spinner"></div>
-      <div class="loading-text">Loading network…</div>
+      <div class="loading-text">Carregando rede…</div>
     </div>
 
     <svg id="network-svg">
@@ -468,9 +468,9 @@
     </svg>
 
     <div class="legend">
-      <div class="legend-title">Legend</div>
-      <div class="legend-item"><div class="legend-dot word-dot"></div>Lexical Item</div>
-      <div class="legend-item"><div class="legend-dot title-dot"></div>Cultural Production</div>
+      <div class="legend-title">Legenda</div>
+      <div class="legend-item"><div class="legend-dot word-dot"></div>Item Lexical</div>
+      <div class="legend-item"><div class="legend-dot title-dot"></div>Produção Cultural</div>
     </div>
 
     <div class="zoom-controls">
@@ -479,9 +479,9 @@
     </div>
 
     <div class="stats-bar" id="statsBar" style="display:none">
-      <div class="stat">Productions: <span class="stat-val" id="statProductions">—</span></div>
-      <div class="stat">Lexical Items: <span class="stat-val" id="statWords">—</span></div>
-      <div class="stat">Connections: <span class="stat-val" id="statLinks">—</span></div>
+      <div class="stat">Produções: <span class="stat-val" id="statProductions">—</span></div>
+      <div class="stat">Itens Lexicais: <span class="stat-val" id="statWords">—</span></div>
+      <div class="stat">Conexões: <span class="stat-val" id="statLinks">—</span></div>
     </div>
   </div>
 </div>
@@ -489,7 +489,7 @@
 <div id="tooltip" class="tooltip"></div>
 
 <script>
-  const BASE_URL = "http://eugestumm.github.io/BajubaDigitalArchive/browse.html";
+  const BASE_URL = "http://eugestumm.github.io/BajubaDigitalArchive/pt/browse.html";
   const CSV_URL  = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTOJ65zw28y13QZmsFBDHkS9DZo1Jw1SVOfulvrmyEzR9hMoWdnd5CYGDKpWoVWq-dhoTIOli16M_Yo/pub?output=csv";
 
   const svg       = d3.select("#network-svg");
@@ -595,7 +595,7 @@
       initViz(nodes, links);
     })
     .catch(err => {
-      loading.html('<div style="color:#f87171;font-size:13px;">Failed to load data.<br>Check the CSV URL.</div>');
+      loading.html('<div style="color:#f87171;font-size:13px;">Erro ao carregar os dados.<br>Verifique a URL do CSV.</div>');
       console.error(err);
     });
 
@@ -720,17 +720,17 @@
       const isTitle = d.group === "title";
 
       const lines = [
-        isTitle && d.creator ? `<div class="tooltip-info">Creator: ${d.creator}</div>` : '',
-        isTitle && d.date    ? `<div class="tooltip-info">Date: ${d.date}</div>` : '',
-        `<div class="tooltip-info">Connections: ${d.connections}</div>`,
+        isTitle && d.creator ? `<div class="tooltip-info">Criador/a: ${d.creator}</div>` : '',
+        isTitle && d.date    ? `<div class="tooltip-info">Data: ${d.date}</div>` : '',
+        `<div class="tooltip-info">Conexões: ${d.connections}</div>`,
         !isTitle && d.frequency > 1
-          ? `<div class="tooltip-info">Found in ${d.frequency} productions</div>` : '',
+          ? `<div class="tooltip-info">Presente em ${d.frequency} produções</div>` : '',
         `<div class="tooltip-cta">
            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
              <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
            </svg>
-           Click to open in archive
+           Clique para abrir no arquivo
          </div>`
       ].filter(Boolean).join('');
 
@@ -738,7 +738,7 @@
         .html(`
           <div class="tooltip-title ${isTitle ? '' : 'word-title'}">${d.id}</div>
           <div class="tooltip-info" style="margin-bottom:5px;opacity:0.55;font-size:11px;letter-spacing:0.06em;text-transform:uppercase">
-            ${isTitle ? 'Cultural Production' : 'Lexical Item'}
+            ${isTitle ? 'Produção Cultural' : 'Item Lexical'}
           </div>
           ${lines}
         `)

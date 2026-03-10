@@ -1,15 +1,15 @@
 ---
-title: Graph Network Visualization
+title: Gráfico de Rede por Obra
 layout: page
-permalink: /graph-network-words-works.html
+
 ---
 
-## Lexical Network Visualization
+## Visualização Léxica em Rede
 
-This page presents an interactive network visualization of the Bajubá lexicon and its connections to cultural productions catalogued in the digital archive. Each node represents either a lexical item or a cultural production; the links indicate which terms appear in each work. Click on any node to explore its connections and be redirected to the corresponding entry in the archive.
+Esta página apresenta uma visualização interativa em rede do léxico do Bajubá e suas conexões com produções culturais catalogadas no arquivo digital. Cada nó representa um item lexical ou uma produção cultural; as conexões indicam quais termos aparecem em cada obra. Clique em qualquer nó para explorar suas conexões e ser redirecionado à entrada correspondente no arquivo.
 
 <div class="responsive-network-iframe">
-  <iframe src="{{ site.baseurl }}/assets/network_graph_words_work_layout.html" 
+  <iframe src="{{ site.baseurl }}/assets/network_graph_words_work_layout_portuguese.html" 
           allowfullscreen>
   </iframe>
 </div>

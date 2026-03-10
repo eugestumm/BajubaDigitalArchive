@@ -10,7 +10,8 @@ nav-browse,Navigation menu Browse option,Browse,Explorar
 nav-subjects,Navigation menu Subjects option,Subjects,Categorias
 nav-locations,Navigation menu Locations option,Locations,Localizações
 nav-map,Navigation menu Map option,Map,Mapa
-nav-timeline,Navigation menu Timeline option,Timeline,Linha do Tempo
+nav-timeline,Navigation menu Timeline option,Timeline,Cronologia
+nav-tags,Navigation menu Tags option,Tags,Etiquetas
 nav-data,Navigation menu Data option,Data,Metadados
 nav-about,Navigation menu About dropdown,About,Sobre
 nav-about_project,Navigation menu About project option,About this project,Sobre este projeto

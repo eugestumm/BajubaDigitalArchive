@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pajubá — Documentation Over Time</title>
+    <title>Pajubá — Documentação ao Longo do Tempo</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <style>
@@ -168,54 +168,54 @@
 </head>
 <body>
 
-<a href="#main-viz" class="skip-link">Skip to visualization</a>
+<a href="#main-viz" class="skip-link">Ir para a visualização</a>
 
 <div id="loading" role="status" aria-live="polite">
     <div class="spinner" aria-hidden="true"></div>
-    <span>Loading lexicon…</span>
+    <span>Carregando léxico…</span>
 </div>
 
 <header class="header" role="banner">
     <div>
-        <h1>Pajubá —<br><em>Documentation Over Time</em></h1>
+        <h1>Pajubá —<br><em>Documentação ao Longo do Tempo</em></h1>
     </div>
-    <div class="controls" role="group" aria-label="Visualization filters">
+    <div class="controls" role="group" aria-label="Filtros da visualização">
         <div class="ctrl-row">
             <button class="filter-btn on-gold" id="btn-yes"
-                aria-pressed="true" aria-label="Show words in mass media">
+                aria-pressed="true" aria-label="Mostrar palavras presentes na mídia de massa">
                 <span class="dot" style="background:var(--gold)" aria-hidden="true"></span>
-                <span>In Mass Media</span>
+                <span>Presente na Mídia</span>
             </button>
             <button class="filter-btn on-blue" id="btn-no"
-                aria-pressed="true" aria-label="Show words not in mass media">
+                aria-pressed="true" aria-label="Mostrar palavras ausentes na mídia de massa">
                 <span class="dot" style="background:var(--blue)" aria-hidden="true"></span>
-                <span>Not in Mass Media</span>
+                <span>Ausente na Mídia</span>
             </button>
-            <div class="stats" id="stats" aria-live="polite" aria-atomic="true">— words</div>
+            <div class="stats" id="stats" aria-live="polite" aria-atomic="true">— palavras</div>
         </div>
         <div class="ctrl-row">
-            <div class="range-wrap" role="group" aria-label="Year range filter">
-                <label for="yr-start" class="sr-only">Start year</label>
-                <input type="range" id="yr-start" aria-valuetext="start year">
+            <div class="range-wrap" role="group" aria-label="Filtro por intervalo de anos">
+                <label for="yr-start" class="sr-only">Ano inicial</label>
+                <input type="range" id="yr-start" aria-valuetext="ano inicial">
                 <span id="range-lbl" aria-live="polite">– –</span>
-                <label for="yr-end" class="sr-only">End year</label>
-                <input type="range" id="yr-end" aria-valuetext="end year">
+                <label for="yr-end" class="sr-only">Ano final</label>
+                <input type="range" id="yr-end" aria-valuetext="ano final">
             </div>
-            <div class="zoom-row" role="group" aria-label="Zoom controls">
-                <button class="zbtn" id="z-out" aria-label="Zoom out">−</button>
+            <div class="zoom-row" role="group" aria-label="Controles de zoom">
+                <button class="zbtn" id="z-out" aria-label="Diminuir zoom">−</button>
                 <span id="zoom-lbl" aria-live="polite" aria-atomic="true">100%</span>
-                <button class="zbtn" id="z-in" aria-label="Zoom in">+</button>
-                <button class="zbtn" id="z-fit" aria-label="Fit all to screen" style="width:auto;padding:0 7px;font-size:9px;letter-spacing:0.05em;">FIT</button>
+                <button class="zbtn" id="z-in" aria-label="Aumentar zoom">+</button>
+                <button class="zbtn" id="z-fit" aria-label="Ajustar à tela" style="width:auto;padding:0 7px;font-size:9px;letter-spacing:0.05em;">FIT</button>
             </div>
         </div>
     </div>
 </header>
 
-<!-- The pannable/zoomable canvas -->
-<main id="stage" role="main" aria-label="Pajubá word bubble visualization. Use zoom controls or scroll to zoom, drag to pan."
+<!-- O canvas navegável -->
+<main id="stage" role="main" aria-label="Visualização de bolhas do Pajubá. Use os controles de zoom ou o scroll para aproximar, e arraste para navegar."
      tabindex="0" id="main-viz">
     <div id="svg-wrap">
-        <svg id="svg" role="img" aria-label="Bubble chart of Pajubá words arranged by year of documentation"></svg>
+        <svg id="svg" role="img" aria-label="Gráfico de bolhas com palavras do Pajubá organizadas por ano de documentação"></svg>
     </div>
 </main>
 
@@ -398,8 +398,8 @@ const ttEl = document.getElementById('tt');
 function ttShow(e, d) {
     ttEl.innerHTML = `
         <div class="tt-word">${d.word}</div>
-        <div class="tt-row"><span>YEAR</span><span>${d.year}</span></div>
-        <div class="tt-row"><span>MASS MEDIA</span><span>${d.inMedia ? 'Yes' : 'No'}</span></div>`;
+        <div class="tt-row"><span>ANO</span><span>${d.year}</span></div>
+        <div class="tt-row"><span>MÍDIA DE MASSA</span><span>${d.inMedia ? 'Sim' : 'Não'}</span></div>`;
     ttMove(e); ttEl.classList.add('show');
     ttEl.setAttribute('aria-hidden', 'false');
 }
@@ -517,14 +517,14 @@ function drawBubbles() {
                         d.year >= yearRange[0] && d.year <= yearRange[1];
         const color = d.inMedia ? COLORS.yes : COLORS.no;
         const r = wordRadius(d.word);
-        const archiveUrl = `/BajubaDigitalArchive/browse.html#${encodeURIComponent(d.word.toLowerCase())}`;
+        const archiveUrl = `/BajubaDigitalArchive/pt/browse.html#${encodeURIComponent(d.word.toLowerCase())}`;
 
         const grp = g.append('g')
             .attr('transform', `translate(${d.x},${d.y})`)
             .attr('data-bubble', '1')
             .attr('role', 'link')
             .attr('tabindex', visible ? '0' : '-1')
-            .attr('aria-label', `${d.word}, first documented in ${d.year}, ${d.inMedia ? 'appears' : 'does not appear'} in mass media. Click to open archive entry.`)
+            .attr('aria-label', `${d.word}, primeira documentação em ${d.year}, ${d.inMedia ? 'presente' : 'ausente'} na mídia de massa. Clique para abrir no arquivo.`)
             .style('cursor', visible ? 'pointer' : 'default')
             .style('opacity', !visible ? 0.04 : 1)
             .style('pointer-events', visible ? 'all' : 'none');
@@ -567,7 +567,7 @@ function rebuild() {
     const allVisible = allData.filter(d => d.year >= yearRange[0] && d.year <= yearRange[1]);
 
     document.getElementById('stats').innerHTML =
-        `<strong>${data.length}</strong> / ${allData.length} words`;
+        `<strong>${data.length}</strong> / ${allData.length} palavras`;
 
     if (!allVisible.length) return;
 
@@ -603,8 +603,8 @@ function syncRange() {
     if (s > e) [s, e] = [e, s];
     yearRange = [s, e];
     rangeLbl.textContent = `${s} – ${e}`;
-    yrStart.setAttribute('aria-valuetext', `start year ${s}`);
-    yrEnd.setAttribute('aria-valuetext', `end year ${e}`);
+    yrStart.setAttribute('aria-valuetext', `ano inicial ${s}`);
+    yrEnd.setAttribute('aria-valuetext', `ano final ${e}`);
     // Year range changes layout — need full rebuild
     rebuild();
     fitToScreen();
@@ -625,7 +625,7 @@ d3.csv(CSV_URL).then(raw => {
     }).filter(d => d.word && Number.isFinite(d.year) && d.year > 0);
 
     if (!allData.length) {
-        document.getElementById('loading').textContent = 'No valid data. Check console.';
+        document.getElementById('loading').textContent = 'Nenhum dado encontrado. Verifique o console.';
         return;
     }
 
@@ -641,7 +641,7 @@ d3.csv(CSV_URL).then(raw => {
     setTimeout(fitToScreen, 50);
 
 }).catch(err => {
-    document.getElementById('loading').textContent = `Failed to load: ${err.message}`;
+    document.getElementById('loading').textContent = `Erro ao carregar dados: ${err.message}`;
 });
 </script>
 </body>

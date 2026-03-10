@@ -1,15 +1,19 @@
 ---
-title: Graph Network Visualization
+title: Linha do Tempo - Registro de Palavras em Pajubá
 layout: page
-permalink: /graph-network-words-works.html
+
 ---
 
-## Lexical Network Visualization
+## Linha do Tempo: Registro de Palavras em Pajubá
 
-This page presents an interactive network visualization of the Bajubá lexicon and its connections to cultural productions catalogued in the digital archive. Each node represents either a lexical item or a cultural production; the links indicate which terms appear in each work. Click on any node to explore its connections and be redirected to the corresponding entry in the archive.
+Este gráfico mapeia **mais de 350 palavras do Pajubá** de acordo com o ano do primeiro registro conhecido.
+
+Cada bolha é uma palavra. Sua posição horizontal indica quando foi registrada pela primeira vez. **As bolhas douradas** apareceram na grande mídia brasileira; **as bolhas azuis**, não.
+
+Agrupamentos verticais densos indicam anos com muitas palavras documentadas. Use os filtros para mostrar ou ocultar cada grupo, ajuste o intervalo de anos para focar em um período e amplie para ler as palavras individualmente.
 
 <div class="responsive-network-iframe">
-  <iframe src="{{ site.baseurl }}/assets/network_graph_words_work_layout.html" 
+  <iframe src="{{ site.baseurl }}/assets/visualization_pajuba_over_time_portuguese.html" 
           allowfullscreen>
   </iframe>
 </div>
