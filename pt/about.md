@@ -39,7 +39,7 @@ Para mais informações sobre coleta de dados, codificação e procedimentos met
 
 ## Financiamento e Sustentabilidade
 
-Este projeto recebeu uma bolsa de $1.000 dólares da Digital Humanities Fellowship da [Universidade de Miami](https://dh.miami.edu). Fundamentado em uma filosofia de [Computação Mínima](https://go-dh.github.io/mincomp/about), o site é hospedado como uma página estática Jekyll por meio do GitHub Pages, e o banco de dados é hospedado pelo Google Planilhas.
+Este projeto recebeu uma bolsa de $1.000 dólares da Digital Humanities Fellowship da [Universidade de Miami](https://dh.miami.edu). Fundamentado em uma filosofia de [Computação Mínima](https://go-dh.github.io/mincomp/about), o site é hospedado como uma página estática Jekyll por meio do GitHub Pages, e o banco de dados é hospedado pelo Google Planilhas. 
 
 ## Agradecimentos
 
